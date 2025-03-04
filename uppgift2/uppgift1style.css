@@ -1,0 +1,49 @@
+html {
+    
+    background-color: lightslategrey;
+}
+body {
+    font-family: sans-serif;
+    margin: auto;
+    max-width: 600px;
+    height: 600px;
+    /* background-color: orange; */
+    background-color: azure;
+}
+
+body h1 {
+    color: purple;
+    text-align: center;
+}
+
+div {
+    border-width: 1px;
+    border-style: solid;
+    border-color: purple;
+    border-radius: 5px;
+}
+
+#billy {
+    color: darkred;
+}
+
+#bob {
+    color: darkgreen;
+}
+
+.two {
+    font-size: larger;
+}
+
+.three {
+    font-size: smaller;
+}
+
+#bob a {
+    text-decoration: line-through;
+}
+
+#bob .two a {
+    text-decoration: underline overline;
+    color: orange;
+}
