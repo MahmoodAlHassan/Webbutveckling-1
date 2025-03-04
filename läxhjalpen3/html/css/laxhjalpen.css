@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+html {
+    margin: 2%;
+}
+
+body {
+    font-family: "Open Sans", "Noto Sans", Calibri, Arial, sans-serif;
+    margin: auto; /* Centrera sidan. */
+    max-width: 860px;
+    font-family: sans-serif;
+    font-size: 100%; /* Startvärde. */
+}
+
+header, section, footer {
+    outline: 1px solid red; /* Provisorisk. */
+}
+
+header {
+    text-align: center;
+}
+
+
+.startpage .logo {
+    width: 235px;
+    height: 198px;
+}
+
+.hwrap {
+    display: flex; /* Gör divven till en flex container. */
+    flex-wrap: wrap; /* Radbryt om det behövs. */
+    align-items: center; /* Lägg till elementen centrerat vertikalt. */
+    justify-content: center; /* Och intill varandra centrerat. */
+
+}
+
+hwrap > a {
+    margin-right: 30px;
+}
+
+
+.startpage h1 {
+    font-size: 500%; /* Massiv rubrik på startsidan. */
+}
+
+.startpage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.startpage header, 
+.startpage footer {
+    flex: 0 0 100%;
+}
+
+.startpage section {
+    flex: 0 0 22%;
+}
+
+
+.tagline {
+    font-size: 120%;
+    padding: 0.5em; /* Avstånd till kantlinjen. */
+    border-top: 3px double #00AF64;
+    border-bottom: 3px double #00AF64;
+    margin: 1em 0; /* Avstånd nedåt men inte uppåt. */
+}
+
+h1 {
+    font-family: "Quicksand", cursive;
+}
+
+h1::first-letter {
+    color: #00AF64;
+}
+
+.menu h2 {
+    font-family: "Quicksand", cursive;
+    margin: 0 0 1em;
+    padding: 2em 0;
+    background-color: #F5F5F5; /* Mycket ljus grå. */
+    text-align: center;
+    
+    box-shadow: inset 0 0 20px #007241;
+    border-radius: 50%;
+}
+
+
+.menu a:link, 
+.menu a:visited {
+    text-decoration: none;
+    color: #000;   /* svart länktext. */
+}
+
+.menu a:focus, 
+.menu a:hover {
+    text-decoration: underline;
+    color: #A62F00;
+}
+
+.menu a:active {
+    text-decoration: underline;
+    color: #ff4900;
+}
+
+
+footer {
+    margin-top: 3em;
+    text-align: center;
+    color: #999;
+}
+
