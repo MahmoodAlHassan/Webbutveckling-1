@@ -1,0 +1,71 @@
+
+body {
+    margin: 0;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 16px;
+   
+}
+
+
+.header h1 {
+    margin: 0;
+    margin-top: 15px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column; /* För att stapla innehållet vertikalt */
+    text-align: center; /* För att centrera innehållet horisontellt */
+    margin-left: 11%;
+    
+
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*
+    width: 200px;
+    background-color: grey;
+    */
+
+    width: 10%;
+    background-color: #f1f1f1;
+    height: 100%; /* Full höjd. */
+    position: fixed; /* Gör så menyn "sitter fast", även när man scrollar. */
+    top: 0; /* Sätter menyn till toppen av sidan */
+    overflow: auto; /* Möjliggör scrollande om sidonavigationen har för mycket innehåll. */
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    }
+
+/* Ändra färg när någon håller över(hover) länken. */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+ul {
+    border: 1px solid #555;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
