@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Hemsida</title>
+      
+</head>
+<body id="body">
+    <button onclick="körDiskret()" id="diskret_sctipt">Kör diskret script</button>
+
+    <button id="changeBgColor">Klicka här för att andra bakgrundsfärg</button>
+
+    <div id="jsSidladdning"></div>
+
+    <div id="containerCalculator">
+        <div id="calculator">
+            <input id="displayCalculation" readonly>
+            <div id="calcButtons">
+                <button onclick="appendToDisplay('+')" class="operatorButton">+</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('-')" class="operatorButton">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')" class="operatorButton">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('/')" class="operatorButton">/</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="clearDisplay()" class="operatorButton">C</button>
+
+            </div>      
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+    <script>
+        console.log('Hej från ett enkelt script!');
+        document.write('Hej från ett enkelt script!');
+        document.getElementById('jsSidladdning').innerText = 'js text, direkt id sidladdning';
+    </script>
+</body>
+</html>
