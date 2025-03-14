@@ -12,7 +12,7 @@ html, body {
     flex-direction: column;
     min-height: 100%; /* Gör att wrapper fyller hela sidan */
     text-align: center;
-    
+    flex-grow: 1; /* Detta gör att innehållet fyller upp utrymmet så att footern stannar längst ner */    
 }
 
 h1 {
