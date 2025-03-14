@@ -1,0 +1,111 @@
+
+html, body {
+    margin: 0;
+    padding-top: 35px; /* Justera beroende på navbarens höjd */
+    background-color: rgb(194, 111, 111);
+    color: white;
+    height: 100% /* För att säkerställa att sidan täcker hela fönstret */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Gör att wrapper fyller hela sidan */
+    text-align: center;
+    
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 3rem;
+}
+
+p {
+    margin-top: 0px;
+    margin-right: 15%;
+    margin-left: 15%;
+    font-size: larger;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden;  -- Ta bort denna, så dropdown bar i övrigt i menu visas */
+    background-color: #0d0867;
+    position: fixed;
+    top: 0;
+    width: 100%;    
+    display: flex; /* Flexbox on ul to arrange li horizontally */
+    justify-content: space-evenly; /* Space out the li elements */
+}
+li {    
+    position: relative; /* Viktigt för dropdown-innehållets positionering */
+}
+li a {
+    color: hsl(0, 40%, 60%);
+    padding: 10px 20px; /* Increase padding for a larger clickable area */
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: x-large;
+    display: block; /* Ensures the entire area of the <a> is clickable */
+    transition: background-color 0.2s ease, color 0.3s ease, border-radius 0.2s ease; /* Smooth transition */
+    cursor: default;
+}
+/* Change the line color to #111 (black) on hover */
+li a:hover {
+    background-color: hsl(0, 40%, 60%);
+    color: hsl(243, 86%, 22%);
+    border-radius: 20px; /* Optional: Add rounded corners for effect */
+}
+li a:active{
+    background-color: hsl(0, 40%, 65%);
+    color: hsl(243, 86%, 42%);
+}
+.blockDropdown:hover{
+    border: none;
+    background-color: hsl(0, 40%, 60%);
+    color: hsl(243, 86%, 22%);
+}
+
+.dropdown {
+    position: relative; /* Föräldern till dropdown-content */
+}
+.dropdown-content {
+    display: none; /* Visa alltid under felsökning */
+    background-color: hsl(243, 80%, 30%); /* Synlig bakgrund */
+    position: absolute;
+    padding: 10px;
+    list-style-type: none;
+    width: 129px;
+}
+.dropdown-content a {
+    display: block; /* Gör länken klickbar över hela området */
+    color: hsl(0, 40%, 60%);
+    text-decoration: none;
+    width: 120px;
+}
+.dropdown-content a:hover {
+    color: hsl(0, 40%, 80%);
+    border-radius: 3px;
+    background-color: hsl(243, 60%, 40%);
+}
+.dropdown-content a:active{
+    color: hsl(0, 40%, 90%);
+    background-color: hsl(243, 50%, 50%);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+footer {
+    background-color: rgba(136, 6, 6, 0.555);
+    width: 100%;
+    text-align: center;
+    margin-top: auto
+}
+footer p {
+    margin: 0;
+    padding: 10px;
+    font-size: larger;
+}
