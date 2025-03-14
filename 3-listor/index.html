@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Listor i HTML</title>
+</head>
+<body>
+
+    <h1>Listor i HTML</h1>
+
+    <h2>Oordnad lista med borttagna punkter.</h2>
+    <div class="listor-border">
+        <ul class="list-style-type-none">
+            <li>1. Första siffran</li>
+            <li>2. Andra siffran</li>
+            <li>---------------------</li>
+            <li>III. Tredje siffran</li>
+            <li>______________</li>
+            <li>4. Fjärde siffran</li>
+            <li>V. Femte siffran</li>        
+        </ul>
+    </div>
+
+    <br>
+    <h2>Ordnad lista med olika stilar</h2>
+    <div class="listor-border">
+        <ol class="upper-roman">
+            <li>Första siffran</li>
+            <li class="decimal-leading-zero">Andra siffran</li>
+            <li>Tredje siffran</li>
+            <div class="normal-numbers">
+                <li>Fjärde siffran</li>
+                <li>Femte siffran</li>
+            </div>
+            <li>Sjätte listan</li>
+        </ol>
+    </div>
+
+    <br>
+    <h2>Nestad lista (oordnad) och varierad</h2>
+    <div class="listor-border">
+        <ul>
+            <li>Första punkten</li>
+                <ul>
+                    <li>Underpunkt 1</li>
+                    <li>Underpunkt 2</li>
+                </ul>
+            <li>Andra punkten</li>
+            <div class="square">
+                <li>Tredje ...</li>
+                <li>Fjärde ...</li>
+            </div>
+        </ul>
+    </div>
+
+    <br>
+    <h2>Varierad ordnad lista med nestade listor</h2>
+    <div class="listor-border">
+        <ol class="normal-numbers">
+            <li>Första siffran</li>
+            <li class="upper-roman">Andra siffran</li>
+                <ul class="square">
+                    <li>Nästad punkt (kvadrat)</li>
+                    <li class="circle">Nästad punkt (kvadrat)</li>
+                        <ul>
+                            <li>Nästad punkt (vanlig punkt)</li>
+                            <li class="square"></li>
+                            <li>-------------</li>
+
+                        </ul>
+                        <ol class="decimal">
+                            <li>Nästad siffra</li>
+                            <li>Nästad ...</li>
+                            <ul class="square">
+                                <li>------</li>
+                                <li>---___</li>
+                                <li class="circle">.....</li>
+                                <li>__----</li>
+                            </ul>
+                        </ol>
+                </ul>
+            </li>
+            <li>Tredje punkten (vanlig siffra)</li>
+        </ol>
+    </div>
+
+
+</body>
+</html>
