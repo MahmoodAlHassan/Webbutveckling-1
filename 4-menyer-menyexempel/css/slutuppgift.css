@@ -4,7 +4,7 @@ html, body {
     padding-top: 35px; /* Justera beroende på navbarens höjd */
     background-color: rgb(194, 111, 111);
     color: white;
-    height: 100% /* För att säkerställa att sidan täcker hela fönstret */
+    height: 100%; /* För att säkerställa att sidan täcker hela fönstret */
 }
 
 .wrapper {
@@ -12,7 +12,6 @@ html, body {
     flex-direction: column;
     min-height: 100%; /* Gör att wrapper fyller hela sidan */
     text-align: center;
-    flex-grow: 1; /* Detta gör att innehållet fyller upp utrymmet så att footern stannar längst ner */    
 }
 
 h1 {
@@ -20,6 +19,9 @@ h1 {
     font-size: 3rem;
 }
 
+.wrapper_2col{
+    margin-bottom: 60px;
+}
 p {
     margin-top: 0px;
     margin-right: 15%;
