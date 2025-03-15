@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+
+.menu_header{
+    margin: 20px;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 30px;
+}
+.menu_header a{
+    font-size: larger;
+}
+
+.header {
+    gap: 20px;
+    background-color: #f1f1f1;
+    color: rgb(2, 2, 147);
+    padding: 10px;
+}   
+
+.content {
+    margin: 0;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.content h2{
+    color: hsl(74, 80%, 40%)
+}
+.content h3{
+    color: hsl(50, 90%, 40%);
+}
+.content ul, ol{
+    padding: 0;
+    list-style-position: inside;
+}
+.content ul li, .content ol li{
+    margin-left: 0;
+}
+
+
+.footer {
+    background-color: rgb(2, 2, 147);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
