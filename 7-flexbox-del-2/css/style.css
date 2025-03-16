@@ -1,0 +1,99 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 109vh;
+
+}
+
+header {
+    background-color: rgb(12, 12, 133);
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+nav {
+    background-color: hsla(240, 87%, 51%, 0.909);
+    width: 110px;
+    padding: 15px; 
+    text-align: center;
+    width: fit-content;
+}
+
+nav ul {
+    list-style-type: none; /* Ta bort punktlistor*/
+    padding: 0;
+    margin: 0;    
+}
+
+nav ul li {
+    margin: 10px; /* Mellanrum mellan länkar*/
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none; /* Ta bort understrykning */
+    padding: 10px 15px; /* Bättre klickyta */
+    display: block; /* Gör hela området klickbart */
+    border-radius: 2px; /* Rundade hörn */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Mjuk övergång */
+
+}
+
+nav ul li a:hover {
+    background-color: white; /* Ändrar bakgrund vid hover */
+    color: #4CAF50; /* Grön text vid hover */
+}
+
+.dropdown{
+    display: block;
+}
+.dropdown_block:hover{
+    color:hsla(240, 87%, 51%, 0.909);
+    background-color: hsl(104, 82%, 83%);
+}
+.dropdown_content{
+    display: none;
+}
+.dropdown:hover .dropdown_content{
+    display: block;
+}
+.dropdown_content a:hover{
+    color: hsl(104, 82%, 83%);
+    background-color: hsla(240, 86%, 56%, 0.909);
+    text-align: start;
+}
+
+section {
+    background-color: hsl(104, 82%, 83%);
+    flex: 1;
+    padding-left: 50px;
+}
+
+footer {
+    background-color: hsl(104, 80%, 78%);
+    color: hsla(240, 87%, 45%, 0.909);
+    border: 2px solid black;
+    font-size: x-large;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
