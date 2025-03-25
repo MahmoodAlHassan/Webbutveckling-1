@@ -1,0 +1,81 @@
+body {
+	background-color: greenyellow;
+	font-size: 1.1em;
+}
+h1 {
+	font-size: 1.60em;
+}
+h2 {
+	font-size: 1.3em;
+}
+img {
+	max-width: 100%;
+}
+figure {
+	margin: 0;
+}
+figcaption{
+	margin-bottom: 20px;
+}
+@media screen and (min-width: 794px) {
+	body {
+		background-color: purple;
+		margin: 2px;
+		color: rgb(208, 240, 250);
+	}
+	h1{
+		font-size: 4em;
+	}
+	h2{
+		font-size: 3em;
+	}
+	p{
+		font-size: 2em;
+		margin: 20px;
+	}
+	figcaption{
+		margin-bottom: 35px;
+		font-size: 2em;
+	}
+}
+
+@media screen and (min-width: 420px) and (max-width: 793px) {
+	body{
+		background-color: rgb(7, 138, 7);
+		color: white;
+	}
+	h1{
+		font-size: xx-large;
+	}
+	h2{
+		font-size: x-large;
+	}
+	p{
+		font-size: larger;
+		margin: 20px;
+	}
+	figcaption{
+		margin-bottom: 25px;
+		font-size: larger;
+	}
+}
+@media screen and (min-width: 1020px) {
+	body{
+		background-color: yellow;
+		color: black;
+		max-width: 950px;
+		font-size: 0.6em;
+	}
+	h1{
+		font-size: 2.3em;
+	}
+	h2{
+		font-size: 1.9em;
+	}
+	p{
+		margin: 20px;
+	}
+	figcaption{
+		margin-bottom: 35px;
+	}
+}
