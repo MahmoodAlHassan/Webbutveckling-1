@@ -1,5 +1,6 @@
 html, body{
     margin: 0;
+    overflow: hidden;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -34,6 +35,7 @@ footer{
     text-align: center ;
     font-size: large;
     border: 4px solid black;
+    box-sizing: border-box;
     font-weight: bold;
     padding: 10px;
 } 
