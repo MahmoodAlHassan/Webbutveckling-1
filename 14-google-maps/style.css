@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: hsl(0, 50%, 60%);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 60%, 55%);
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 100px;
+}
+nav li{
+    list-style-type: none;
+}
+nav li a{
+    font-size: x-large;
+    color: hsl(33, 100%, 88%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: background-color 0.1s ease;
+    padding: 10px;
+}
+nav li a:hover{
+    background-color: hsl(0, 60%, 60%);
+    color:hsl(33, 100%, 94%);
+    width: fit-content;
+    padding: 30px 10px;
+}
+
+h2{
+    color: white;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: xx-large;
+    margin-top: 20px;
+    padding-left: 5%;
+}
+
+h1{
+    margin-top: -10px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    width: 65%;
+}
+
+p{
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 40px;
+}
+
+
+@media screen and (min-width: 420px) and (max-width: 793px) {
+	body{
+        margin: 0;
+        background-color: hsl(0, 50%, 60%);
+        color: hsl(33, 100%, 80%);
+    }
+
+    nav{
+        background-color: hsl(0, 50%, 53%);
+    }
+    nav ul{
+        gap: 20px;
+    }
+    nav li a:hover{
+        background-color: hsl(0, 60%, 65%);
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+	h1{
+		font-size: 3em;
+	}
+
+    iframe{
+        width: 90%;
+    }
+	p{
+		font-size: 2em;
+	}
+}
+
+
+@media screen and (min-width: 794px) {
+	body{
+        background-color: hsl(0, 55%, 50%);
+        color: hsl(33, 100%, 72%);
+    }
+
+    nav{
+        background-color: hsl(0, 70%, 62%);
+    }
+    nav ul{
+        gap: 20px;
+    }
+    nav li a:hover{
+        background-color: hsl(0, 65%, 68%);
+    }
+
+    h2{
+        font-size: 1.7em;
+    }
+	h1{
+		font-size: 4em;
+	}
+    iframe{
+        width: 85%;
+    }
+
+	p{
+		font-size: 2em;
+		margin: 20px;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	body{
+        background-color: hsl(0, 55%, 40%);
+        color: hsl(33, 100%, 64%);
+    }
+
+    nav{
+        background-color: hsl(0, 60%, 55%);
+    }
+    nav ul{
+        gap: 20px;
+    }
+    h2{
+        font-size: 2em;
+    }
+	h1{
+		font-size: 4em;
+	}
+    iframe{
+        width: 80%;
+    }
+
+	p{
+		font-size: 2em;
+		margin: 20px;
+	}
+}
+
