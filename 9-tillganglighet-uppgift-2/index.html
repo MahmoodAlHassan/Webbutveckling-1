@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibility Exercise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Welcome to Our Website</h1>
+
+    <div class="wrapper1">
+        <img class="cat-img" src="img/cat.png" alt="A cat">
+
+        <form action="submit.html" method="post">
+            <h2>Fill-in-form</h2>
+            <label for="name">Name</label>
+            <input type="text" name="name">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+            <label for="message">Message</label>
+            <textarea name="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <a class="external-link" href="https://www.example.com" target="_blank">Visit Example (outside this website)</a>
+    
+    <button id="alert-button" onclick="alert('Clicked!')">Click Me (to show an alert)</button>
+    <div class="fixed-red-text">The red text has been fixed.</div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        </tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+        </body>
+    </table>
+
+    <video controls>
+        <source src="movie.mp4" type="video/mp4">
+    </video>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <button class="press-me" role="button" tabindex="0">Press me</button>
+    
+    <label id="content" aria-hidden="false">This content is no longer hidden</label>
+    <input class="content-search" type="text" aria-label="Search">
+
+    <div class="black-on-black">Black on black text problem fixed</div>
+    <div class="large-image">
+        <img src="img/car.png" alt="car">
+    </div>
+    <div class="adjusted-text">The size of the "small" text is now adjusted</div>
+    <div class="adjusted-text">The size of the "large" text is now adjusted</div>
+</body>
+</html>

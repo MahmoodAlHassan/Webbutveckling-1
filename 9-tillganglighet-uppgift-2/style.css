@@ -1,0 +1,143 @@
+nav {
+    background-color: #004080;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    align-content: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;  
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 60px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 3em;
+}
+
+.wrapper1 {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+}
+.cat-img {
+    width: 40vw;
+    margin-bottom: -60px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: large;
+    border: solid black 2px;
+    padding: 20px;
+}
+form h2 {
+    text-align: center;
+    margin: 5px;
+}
+form label {
+    padding-top: 10px;
+}
+form button {
+    font-size: large;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.external-link {
+    font-size: larger;
+}
+
+#alert-button {
+    text-align: center;
+    width: 150px;
+    font-size: 1em;
+    margin-left: 150px;
+    margin-top: 60px;
+    padding: 10px;
+    border-radius: 15px;
+}
+#alert-button, .external-link {
+    margin-top: 110px;
+}
+
+.fixed-red-text {
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+table {
+    margin: 40px auto;
+    border: solid black 2px;
+    background-color: antiquewhite;
+    width: 100vh;
+}
+th, td {
+    font-size: larger;
+    width: 200px;
+}
+td {
+    text-align: center;
+}
+
+video, audio {
+    display: block;
+    margin: 0 auto;
+    width: 60vw;
+}
+audio {
+    margin-bottom: 50px;
+}
+
+.black-on-black {
+    background-color: #000000;
+    color: white;
+    font-size: x-large;
+    margin: 20px;
+    padding: 20px;
+    width: fit-content;
+}
+
+#content {
+    font-size: 1.5em;
+    margin-left: 20%;
+}
+.content-search {
+    padding: 7px;
+}
+
+.large-image img {
+    width: 60vw;
+    border: solid blue 8px;
+    border-radius: 15px;
+}
+
+.adjusted-text {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.press-me {
+    font-size: larger;
+    padding: 10px;
+    margin: 30px;
+}
